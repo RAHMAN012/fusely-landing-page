@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/Path.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body class="container mx-auto  md:px-[2rem] md:py-[1rem]">
+    <header class="bg-[#fff] header">
+      <nav class="navbar">
+        <div class="logo ">
+          <img src="./images/Group.svg" alt="logo" class="hover:mt-7" />
+          <h3>Fusely</h3>
+        </div>
+
+        <div>
+          <ul class="nav-links  md:mt-[2rem]  " id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+  
+            <div class="get-started">
+              <a href="#">Log In</a>
+              <a href="">Get Started</a>
+            </div>
+          </ul>
+        </div>
+       
+        <!-- toggle buttons -->
+        <div class="menu-icon lg:hidden" id="menuIcon" >
+          <i class="ri-menu-line text-[#6c63ff] "></i>
+          <!-- Hamburger Icon -->
+        </div>
+        <div class="close-icon lg:hidden" id="closeIcon">
+          <i class="ri-close-fill text-[#6c63ff] "></i>
+          <!-- Close Icon -->
+        </div>
+      </nav>
+    </header>
+    <!-- DESKTOP HEADER -->
+    <header class=" header-desktop  ">
+      <div class="logo">
+        <img src="./images/Group.svg" alt="logo" />
+        <h3>Fusely</h3>
+      </div>
+      <nav class="flex justify-between">       
+          <ul class="desktop-nav desktop-link" id="navLinks">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">Contact</a></li>            
+          </ul>             
+      </nav>
+      <div class="get-started">
+        <a href="#">Log In</a>
+        <a href="">Get Started</a>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <main id="#home" class="hero-section  p-[2rem] bg-[#fff] lg:flex lg:justify-between lg:items-center lg:w-[100%] lg:gap-[2rem] xl:px-[10rem] xl:justify-center">
+      <div class="hero-header lg:w-[50%] xl:w-[70%]  lg:mr-[2rem ">
+        <h1 class="text-[46px] mb-[1.5rem]  md:text-[5rem] lg:text-[4rem] xl:w-[22rem] xl:text-[5.5rem] font-bold ">Let's get fusely together</h1>
+        <p class="text-[1rem] md:text-[1.2rem] mb-[2rem] md:mb-[4rem] text-[#9893a3] lg:text-[1.5rem] xl:w-[30rem]">
+          Outcome- centered product that reduce, churn, optimize pricing and 
+          your subscription business end-to-end.
+        </p>
+        <a
+          href="#"
+          class="bg-[#6C63FF] text-[#fff] px-[2rem] py-[1rem] mb-[4.5rem] md:mb-[2.5rem] md:text-[1.2rem]"
+          >Get Started
+        </a>
+      </div>
+      <div class="hero-img md:mt-[5rem] md:flex md:justify-center md:items-center lg:w-[70%]">
+        <img
+          src="/images/Group 36.png"
+          alt=""
+          class="mt-[3rem] w-[18rem] md:w-[35rem] xl:w-[50rem]"
+        />
+      </div>
+    </main>
+    <!-- LOGO SECTION -->
+    <section class=" p-[2rem] lg:p-[3.5rem] bg-[#fff] ">
+      <div class="flex flex-wrap gap-[1rem] md:gap-[2rem] lg:gap-[3rem] justify-center items-center img-section"      >
+        <img src="./images/binator logo.svg" alt=""  class="lg:w-[10rem] "/>
+        <img src="./images/buyme logo.svg" alt=""   class="lg:w-[10rem]"/>
+        <img src="./images/loogipsum logo.svg" alt=""  class="lg:w-[10rem]"/>
+        <img src="./images/umbrella logo.svg" alt=""  class="lg:w-[10rem]"/>
+        <img src="./images/square logo (1).svg" alt="" class="lg:w-[10rem]"/>
+      </div>
+    </section>
+    <!-- DETAILED SECTION -->
+    <section class="px-[20px] py-[20px] bg-[#fff]  lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:w-[100%] lg:gap-[2rem] xl:px-[10rem]" id="features">
+      <div class="details lg:w-[50%]   lg:mr-[2rem">
+        <h2 class="text-[2.125rem] mb-[1rem] font-bold  md:text-[3.125rem]">Detailed Examination</h2>
+        <p class="text-[#9893a3] mb-[3rem] text-[1.1rem] md:text-[1.25rem] lg:text-[1.5rem]">A daily dataset to keep you up to date on
+          subscription market trends and what’s
+          happening in your vertical</p>
+          <a
+          href="#"
+          class="bg-[#6C63FF] text-[#fff] px-[2rem] py-[1rem] mb-[2rem] md:text-[1.2rem]"
+          >Learn More
+        </a>
+      </div>
+      <div class="mt-[5rem] lg:w-[50%]">
+        <img src="./images/Section Image.png" alt="">
+      </div>
+    </section>
+    <!-- CREATIVE SECTION -->
+    <section class="creative-section px-[20px] pt-[3rem] bg-[#fff] lg:flex lg:justify-between lg:items-center lg:w-[100%] lg:gap-[2rem] xl:px-[10rem]">
+      <div class="creative lg:w-[50%]   lg:mr-[2rem">
+        <h2 class="text-[34px] mb-[1rem] font-bold md:text-[3.125rem] ">Creative Solution</h2>
+        <p class="text-[#9893a3]  mb-[3rem] text-[1.1rem] md:text-[1.25rem] lg:text-[1.5rem]">Creativity is our second name. We’re full
+          of inventive ideas and we’re  happy to
+          present them to you.</p>
+          <a
+          href="#"
+          class= "text-[#fff] px-[2rem] py-[1rem] mb-[3rem] bg-[#6c63ff] md:text-[1.2rem]"
+          >Learn More</a>
+      </div>
+      <div class="section-img mt-[3.5rem] lg:w-[50%]">
+    <img src="./images/Section Image (1).png" alt="">
+      </div>
+    </section>
+    <!-- PROFESSION SECTION -->
+     <section class="profession-section px-[21px] pt-[3rem] bg-[#fff] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:w-[100%] lg:gap-[2rem] xl:px-[10rem]">
+      <div class="profession lg:w-[50%]   ">
+        <h2 class="text-[34px] mb-[1rem] font-bold md:text-[3.125rem]">Professional Team</h2>
+        <p class="text-[#9893a3]  mb-[3rem] text-[1.1rem] md:text-[1.25rem] lg:text-[1.5rem]">Well, obviously, we’re professionals.
+          Don’t hesitate-get to know us
+          better.</p>
+          <a
+          href="#"
+          class= "text-[#fff] px-[2rem] py-[1rem] mb-[3rem] bg-[#6c63ff] md:text-[1.2rem]"
+          >Learn More</a>
+      </div>
+      <div class="mt-[4rem] lg:w-[50%] mr-[3rem]">
+          <img src="./images/Section Image (2).png" alt="" class="w-[18.75] md:w-[25rem">
+      </div>
+     </section>
+     <!-- PLAN SECTION -->
+      <section class="plan-section px-[21px] pt-[3rem] bg-[#fff] pb-[2rem] md:pt-[4.5rem] lg:pt-[10rem] xl:px-[10rem]" id="pricing">
+         <h1 class="text-[34px] mb-[1rem] font-bold md:text-[3.125rem] md:mb-[3.5rem] lg:text-center lg:text-[5rem]">Choose your plan</h1>
+
+         <div class="plan-pricing grid ">
+
+          <div class="plan-hover text-center mt-[1.75rem] plan-texts bg-[#ecebff] py-[3rem]  md:py-[4rem] lg:h-[30rem] lg:mt-[3rem]" >
+            <p class=" text-[1.2rem] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Starter</p>
+            <h1 class=" main-plan text-[48px] mb-[1rem]">Free</h1>
+            <div>
+              <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Dashboard</p>
+              <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Unlimited Support</p>
+              <p class="text-[20px] mb-[2rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Forever Free</p>
+            </div>
+            <a href="#" class="border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[2rem] py-[1rem] mt-[1rem] text-[1.2rem]">Get Started</a>
+          </div>
+          
+            <div class="trackings plan-hover text-center2 text-center mt-[1.75rem] plan-texts bg-[#6c63ff] py-[2.5rem] md:py-[4rem] lg:h-[32rem]" >
+              <p class="text-[1.2rem] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Premium</p>
+              <h1 class="main-plan text-[48px] mb-[2rem ]text-[.75rem] text-white">$29<span class="text-[1rem]">/month</span></h1>
+              <div>
+                <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold ">Dashboard Analysis</p>
+                <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Premium Support</p>
+                <p class="text-[20px] mb-[2rem] text-[#717082] md:text-[1.25rem] lg:font-bold ">Tracking Service</p>
+              </div>
+              <a href="#" class="tracking-link bg-[white] text-[#6c63ff] px-[2rem] py-[1rem] mt-[1rem] text-[1.2rem] md:px-[5rem]">Get Started</a>
+            </div>
+          <!--  -->
+          
+          <div class="plan-hover text-center mt-[1.75rem] plan-texts bg-[#ecebff] py-[2.5rem] md:py-[4rem] lg:h-[30rem] lg:mt-[3rem]" >
+            <p class="text-[1.2rem] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Enterprise</p>
+            <h1 class="main-plan text-[48px] mb-[2rem ]text-[.75rem] ">$49<span class="text-[1rem]">/month</span></h1>
+            <div  class="md:mb-[2rem]">
+              <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">All features in premium</p>
+              <p class="text-[20px] mb-[1rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Real Time Overview</p>
+              <p class="text-[20px] mb-[2.5rem] text-[#717082] md:text-[1.25rem] lg:font-bold">Mobile App</p>
+            </div>
+            <a href="#" class="border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[2rem] py-[1rem] mt-[1rem] text-[1.2rem] md:mt-[3rem]">Get Started</a>
+          </div>      
+
+         </div>
+       
+      </section>
+
+      <!-- BLOG SECTION -->
+        <section class="blog-section px-[21px] pt-[3rem] pb-[2rem] lg:pb-[10rem] bg-[#fff] relative xl:px-[10rem]" id="blog">
+          <div class="flex justify-between items-center pb-[4rem]">
+            <h1 class="text-[1.5rem] font-bold  md:text-[2.25rem]">From our blog </h1>            
+            <div class="">
+              <a href="#" class="border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[1.5rem] py-[.75rem] mt-[1rem] text-[1.2rem]">View All</a>
+            </div>
+          </div>
+
+          <!-- IMAGE CONTAINER -->
+           <div class=" blog-container">
+            <div class="mb-[3rem] lg:mb-[4rem] md:flex md:items-center md:justify-center lg:items-start  md:py-[2rem] md:gap-[1.75rem] lg:flex-col xl:mt-[3rem]">
+              <div class="">
+                <img src="./images/image 1.png" alt="" class="mb-[2rem] lg:mb-[.5rem] lg:h-[18.1rem] xl:mt-[-2.5rem]">
+              </div>
+              <div class="md:w-[16rem] blog-header xl:w-[20rem] ">
+                    <h1 class="text-[2rem] mb-[1.2rem] font-bold  lg:text-[1.75rem] xl:font-medium">What's Fusely?</h1>
+                    <p class="text-[1.1rem] text-[#9893A3] mb-[3rem] md:text-[1rem] xl:mb-[1rem]">A brand new company, created for everyone. This 
+                      article will help you understand what “fusely”
+                       stands for.</p>
+                       <a href="#" class="text-[1.2rem] pb-[.75rem] border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[1.5rem] py-[1rem] md:border-[transparent] md:text-[1.5rem] md:p-[0] underline">Read More</a> 
+                                           
+              </div>
+             </div>
+             <!--  -->
+             <div class="mb-[3rem] md:flex md:items-center md:justify-center lg:items-start  md:py-[2rem] md:gap-[1.75rem] lg:flex-col">
+              <div class="">
+                <img src="./images/image 2.png" alt="" class="mb-[2rem] lg:mb-[.5rem] md:h-[18rem]">
+              </div>
+              <div class="md:w-[16rem] blog-header xl:w-[20rem]">
+                    <h1 class="text-[32px] mb-[1.2rem] font-bold  lg:text-[1.5rem] xl:font-medium">Introduce fusely engage</h1>
+                    <p class="text-[1.1rem] text-[#9893A3] mb-[3rem] md:mb-[1rem]  md:text-[1rem]">A brand new company, created for everyone. This 
+                      article will help you understand what “fusely”
+                       stands for.</p>
+                       <a href="#" class="text-[1.2rem] pb-[.75rem] border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[1.5rem] py-[1rem] md:border-[transparent] md:text-[1.5rem] md:p-[0] underline">Read More</a> 
+                                           
+              </div>
+             </div>
+               <!--  -->
+               <div class="mb-[3rem] md:flex md:items-center md:justify-center lg:items-start  md:py-[2rem] md:gap-[1.75rem] lg:flex-col">
+                <div class="">
+                  <img src="./images/Group 50.png" alt="" class="mb-[2rem] lg:mb-[.5rem] md:h-[18rem]">
+                </div>
+                <div class="md:w-[16rem] blog-header xl:w-[20rem]">
+                      <h1 class="text-[32px] mb-[1.2rem] font-bold xl:font-medium lg:text-[1.5rem]">Premium vs Enterprise Plan</h1>
+                      <p class="text-[1.1rem] text-[#9893A3] mb-[3rem] md:mb-[1rem]  md:text-[1rem]">A brand new company, created for everyone. This 
+                        article will help you understand what “fusely”
+                         stands for.</p>
+                         <a href="#" class="text-[1.2rem] pb-[.75rem] border-solid border-[#6c63ff] border-[1px] text-[#6c63ff] px-[1.5rem] py-[1rem] md:border-[transparent] md:text-[1.5rem] md:p-[0] underline">Read More</a> 
+                                             
+                </div>
+               </div>
+  
+           </div>
+          
+             <!--  -->
+             <div class="interested interested bg-[#2f2e41] text-[white] px-[21px] py-[4rem] flex flex-col justify-center items-center w-[100%] md:flex md:flex-row md:justify-between md:gap-[2rem] md:px-[2rem] lg:w-[50rem] lg:absolute lg:top-[91%] lg:left-[17%]">
+              <h1 class="text-[2rem] text-center mb-[3.5rem] font-bold md:w-[17rem] md:text-left md:mb-[0]">Interested in getting Fusely?</h1>
+              <div class="#">
+                <a href="#" class="text-[#fff] px-[2rem] py-[1rem] mb-[3rem] bg-[#6c63ff]">Let's Talk</a>
+              </div>
+            </div>
+        </section >
+       
+        <!-- footer section -->
+          <footer class=" px-[1rem] pt-[3rem] pb-[2rem] bg-[#ecebff] md:pt-[4rem] md:pb-[3rem] lg:pt-[12rem] " id="contact" >
+          
+            <div class="flex justify-around xl:px-[]">
+              <div class="mb-[2rem] flex flex-col justify-around md:flex-row">
+                <div class="flex flex-col mb-[2rem] md:mr-[3rem] xl:mr-[12rem]">              
+                  <a href="#" class="font-bold text-[1.3rem] lg:text-[1.5rem] mb-[1rem]">Product </a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">How it works</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Features</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Pricing</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">FAQ</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Download</a>
+                 </div>
+                 <!--  -->
+                 <div class="flex flex-col">              
+                  <a href="#" class="font-bold text-[1.3rem] lg:text-[1.5rem] mb-[1rem]">Company </a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">About</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Blog</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Partnership</a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Terms of use </a>
+                  <a href="#" class="text-[1.2rem] mb-[.75rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Privacy Policy</a>
+                 </div>
+              </div>
+  
+              <!-- SECOND BATCH -->
+               
+  
+              <div class=" flex flex-col justify-around md:flex-row xl:ml-[-25rem] ">
+                <div class="flex flex-col mb-[2rem]  md:mr-[3rem] mt-[-7rem] xl:mt-[0] lg:mt-[0] md:mt-[0]">              
+                  <a href="#" class="font-bold text-[1.3rem] lg:text-[1.5rem] mb-[1rem]">Support </a>
+                  <a href="#" class="text-[1.2rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Help center</a>
+                  <a href="#" class="text-[1.2rem] lg:text-[1.35rem] lg:mb-[1rem] text-[#9893a3]">Contact Us</a>
+                  
+                 </div>
+                 <!--  -->
+                 <div class="flex flex-col ">              
+                  <a href="#" class="font-bold text-[1.3rem] lg:text-[1.5rem] mb-[1rem]">Get in touch</a>
+                  <div class="profile-links flex">
+                    <img src="./images/Social media icon.png" alt="facebook-link" class="mr-[.75rem]">
+                    <img src="./images/Social media icon (1).png" alt="twitter link" class="mr-[.75rem]">
+                    <img src="./images/Social media icon (2).png" alt="linkedin link" class="mr-[.75rem]">
+                  </div>
+                 </div>
+              </div>
+            </div>
+           
+
+            <!-- PATH -->
+             <div class="px-[21px] pt-[1rem] pb-[2rem] flex justify-between items-center" >
+              <img src="./images/Logo.svg" alt="" class="md:w-[9rem]">              
+              <div>
+                <p class="text-[#9893a3] text-[.8rem] md:text-[1.25rem]"> &copy;Fusely 2024.All rights reserved.</p>
+              </div>
+             </div>
+          </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
